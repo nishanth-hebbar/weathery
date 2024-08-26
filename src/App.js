@@ -96,7 +96,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <h1>Classy Weather</h1>
+        <h1>Weathery</h1>
         <Input
           location={this.state.location}
           onChangeLocation={this.setLocation}
@@ -147,7 +147,7 @@ class Weather extends React.Component {
 
     return (
       <div>
-        <h2>Weather {this.props.location}</h2>
+        <h2>Weather in {this.props.location}</h2>
         <ul className="weather">
           {dates.map((date, i) => (
             <Day
